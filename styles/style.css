@@ -6,7 +6,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #000;
 }
 
@@ -14,22 +15,34 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+/* common CSS Properties starts here.............. */
+.color1 {
+    color: rgba(255, 255, 255, 1.00);
+}
+
+.color2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* common CSS Properties ends here.............. */
 
 /* header section starts here............ */
 header {
-       background: linear-gradient(180deg, rgba(17, 17, 17, 0),rgba(119, 119, 119, 0) 100%);
+    /* background-image: linear-gradient(180deg, rgba(17, 17, 17, 0)0%, rgba(119, 119, 119, 1.0) 100%); */
+    background: linear-gradient(180deg, rgb(32, 32, 32), rgba(34, 33, 33, 0.7) 100%);
 }
 
-.navbar-and-banner-container{
+.navbar-and-banner-container {
     max-width: 85%;
     margin: 0 auto;
 }
+
 /* navbar starts here........ */
 .navbar-container {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 .navbar-brand {
@@ -38,16 +51,18 @@ header {
     font-style: italic;
     color: #E6533C;
 }
-.links-container{
-    border: 1px solid #FFFFFF;
+
+.links-container {
+    border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 35px;
-    
+
 }
+
 .navbar-links {
     display: flex;
     align-items: center;
     margin: 12px;
-    
+
 }
 
 .navbar-links li {
@@ -58,7 +73,7 @@ header {
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1.0);
     padding: 8px 25px;
 }
 
@@ -66,26 +81,221 @@ header {
     background-color: #E6533C;
     border-radius: 45px;
 }
-#hambarger{
+
+#hambarger {
     display: none;
 }
 
 /* navbar ends here........ */
 
 /* header section ends here............ */
+/* banner section starts here......... */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.banner-content {
+    width: 45%;
+    padding-bottom: 70px;
+}
+
+.banner-img-container {
+    width: 45%;
+}
+
+.banner-title {
+    font-size: 4.58rem;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+#shape {
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.banner-describtion {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.btn-primary {
+    padding: 15px 45px;
+    background-color: #E6533C;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.20rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+.btn-secondary {
+    padding: 15px 45px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1.00);
+    border-radius: 40px;
+    font-size: 1.20rem;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+
+.banner-img-container {
+    background-image: url('../images/Images\ 2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65% 100%;
+    position: relative;
+}
+
+.video-350 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 90px;
+    background-color: rgba(44, 43, 43, 0.54);
+    border-radius: 12px;
+    position: absolute;
+    bottom: 70px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+
+#play-btn {
+    display: none;
+}
+
+.video-500 {
+    width: 190px;
+    height: 90px;
+    text-align: center;
+    background-color: rgba(44, 43, 43, 0.54);
+    border-radius: 12px;
+    padding: 12px 15px;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+}
+
+/* banner section ends here......... */
 
 
 /* ======================Resposive For Mobile================================ */
 
 @media screen and (max-width:576px) {
-    .links-container{
+
+    /* navbar section responsive starts here........ */
+    .links-container {
         display: none;
     }
-    #hambarger{
+
+    #hambarger {
         display: block;
         color: #FFFFFF;
         font-size: 2rem;
         font-weight: 600;
     }
+
+    /* navbar section responsive ends here........ */
+    /* banner section responsive starts here........ */
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .banner-title {
+        font-size: 2.25rem;
+        line-height: 50px;
+    }
+
+    #shape {
+        font-size: 5rem;
+    }
+
+    .banner-describtion {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .btn-primary {
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .btn-secondary {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .banner-img-container {
+        width: 100%;
+        height: 500px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    #play-btn {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #E6533C;
+        background-color: rgba(255, 255, 255, 1.0);
+        border-radius: 55%;
+    }
+
+    .video-500 {
+        width: 140px;
+        height: 50px;
+    }
+    .video-500 {
+        width: 150px;
+        height: 70px;
+        padding: 12px 18px ;
+        top: 50px;
+        right: 10px;
+    }
+
+    .video-500 h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .video-500 p {
+        font-size: 0.7rem;
+        /* font-weight: 600; */
+    }
+    .video-350 {
+        width: 160px;
+        height: 80px;
+        bottom: 200px;
+        left: 10px;
+        padding: 8px 15px;
+    }
+    .video-350 div>p {
+        font-size: 0.8rem;
+    }
+
+
+    /* banner section responsive ends here........ */
 }
