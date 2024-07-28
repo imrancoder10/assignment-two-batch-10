@@ -215,7 +215,7 @@ header {
 .section-title {
     font-size: 3rem;
     font-weight: 700;
-    
+
 }
 
 .section-describtion {
@@ -255,37 +255,147 @@ header {
 
 
 /* Run section starts here............. */
-.run-container{
+.run-container {
     display: flex;
     justify-content: space-between;
     background-color: rgba(34, 34, 34, 1.00);
     padding: 30px 35px;
     border-radius: 20px;
+    height: 370px;
 
 }
-.run-container>div:nth-child(1){
-    width: 50%;
-    /* height: 300px; */
-    overflow: hidden;
-}
-.run-container>div:nth-child(2){
-    width: 35%;
-    height: 350px;
 
+.run-container>div:nth-child(1) {
+    width: 45%;
 }
-.run-img-container>img{
+
+.run-container>div:nth-child(2) {
+    width: 40%;
+}
+
+.run-img-container>img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-     object-fit: none;
+    object-fit: none;
     object-position: right 30% top 30%;
 }
-.run-btn{
+
+.run-btn {
     margin-top: 35px;
 }
 
 /* Run section ends here............. */
 
+/* training section starts here............... */
+.training-content {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.training-img-container {
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.training-img1 {
+    grid-column: 1/ span 3;
+    background-image: linear-gradient(45deg, rgba(6, 255, 210, 0.50), rgba(6, 255, 210, 0.50)), url('../images/exercise1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-img2 {
+    grid-column: 4/ span 6;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-img3 {
+    grid-column: 10/ span 3;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise3.png');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-img4 {
+    grid-column: 1/ span 5;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise4.png');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-img5 {
+    grid-column: 6/ span 3;
+    background-image: linear-gradient(45deg, rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url('../images/exercise5.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-img6 {
+    grid-column: 9/ -1;
+    background-image: linear-gradient(45deg, rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url('../images/exercise6.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.training-pic1 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.training-pic2 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.training-pic3 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.training-pic4 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.training-pic5 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.training-pic6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+/* training section ends here............... */
 
 
 
@@ -407,18 +517,20 @@ header {
     /* banner section responsive ends here........ */
 
     /* change habits section responsive ends here............. */
-    .page-align-center{
+    .page-align-center {
         margin-top: 30px;
     }
+
     .habit-content {
         width: 100%;
     }
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .habit-images-container {
-       flex-direction: column;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 40px;
@@ -433,35 +545,75 @@ header {
 
 
 
-/* Run section responsive starts here............. */
-.run-container{
-    flex-direction: column;
-    padding: 30px 30px;
-    gap: 20px;
-}
-.run-container>div:nth-child(1){
+    /* Run section responsive starts here............. */
+    .run-container {
+        flex-direction: column;
+        padding: 30px 30px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .run-container>div:nth-child(1) {
+        width: 100%;
+        height: auto;
+    }
+
+    .run-container>div:nth-child(2) {
+        width: 100%;
+        height: 200px;
+    }
+
+    .run-btn {
+        width: 100%;
+
+    }
+
+    .run-img-container>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: contain;
+
+    }
+
+    /* Run section responsive ends here............. */
+
+/* training section starts here............... */
+.training-content {
     width: 100%;
-    height: auto;
-}
-.run-container>div:nth-child(2){
-    width: 100%;
-}
-.run-btn{
-   width: 100%;
-
-}
-.run-img-container>img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-     object-fit: contain;
-     
+    margin-bottom: 30px;
 }
 
-/* Run section responsive ends here............. */
+.training-img-container {
+    height: 250px;
+}
+
+.training-img1 {
+    grid-column: 1/ span 6;
+}
+
+.training-img2 {
+    grid-column: 7/ -1;
+}
+
+.training-img3 {
+    display: none;
+}
+
+.training-img4 {
+    grid-column: 1/ span 6;
+}
+
+.training-img5 {
+    grid-column: 7/ -1;
+}
+
+.training-img6 {
+    display: none;
+}
 
 
-
+/* training section ends here............... */
 
 
 
