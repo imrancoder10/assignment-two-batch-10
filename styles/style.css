@@ -24,6 +24,11 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.page-align-center {
+    max-width: 85%;
+    margin: 100px auto 100px auto
+}
+
 /* common CSS Properties ends here.............. */
 
 /* header section starts here............ */
@@ -179,6 +184,13 @@ header {
     display: none;
 }
 
+#play-white-btn {
+    position: absolute;
+    bottom: 200px;
+    left: 20px;
+    color: rgba(250, 250, 249, 1.00);
+}
+
 .video-500 {
     width: 190px;
     height: 90px;
@@ -192,6 +204,58 @@ header {
 }
 
 /* banner section ends here......... */
+
+/* change habits section starts here............. */
+.habit-content {
+    width: 50%;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section-describtion {
+    font-size: 0.8rem;
+    margin-top: 14px;
+}
+
+.habit-images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.habit-images-container>div {
+    width: 25%;
+    text-align: center;
+}
+
+.habit-images-container div>img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.img-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.img-describtion {
+    font-size: 0.8rem;
+}
+
+/* change habits section ends here............. */
+
+
+
+
+
+
+
 
 
 /* ======================Resposive For Mobile================================ */
@@ -264,14 +328,19 @@ header {
         border-radius: 55%;
     }
 
+    #play-white-btn {
+        display: none;
+    }
+
     .video-500 {
         width: 140px;
         height: 50px;
     }
+
     .video-500 {
         width: 150px;
         height: 70px;
-        padding: 12px 18px ;
+        padding: 12px 18px;
         top: 50px;
         right: 10px;
     }
@@ -285,6 +354,7 @@ header {
         font-size: 0.7rem;
         /* font-weight: 600; */
     }
+
     .video-350 {
         width: 160px;
         height: 80px;
@@ -292,10 +362,47 @@ header {
         left: 10px;
         padding: 8px 15px;
     }
+
     .video-350 div>p {
         font-size: 0.8rem;
     }
 
 
     /* banner section responsive ends here........ */
+
+    /* change habits section responsive ends here............. */
+    .page-align-center{
+        margin-top: 30px;
+    }
+    .habit-content {
+        width: 100%;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .habit-images-container {
+       flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .habit-images-container>div {
+        width: 70%;
+    }
+
+
+    /* change habits section responsive ends here............. */
+
+
+
+
+
+
+
+
+
+
+
 }
