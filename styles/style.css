@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* header section starts here............ */
+header {
+       background: linear-gradient(180deg, rgba(17, 17, 17, 0),rgba(119, 119, 119, 0) 100%);
+}
+
+.navbar-and-banner-container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+/* navbar starts here........ */
+.navbar-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.navbar-brand {
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+}
+.links-container{
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links>li>a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 8px 25px;
+}
+
+.home-link {
+    background-color: #E6533C;
+    border-radius: 45px;
+}
+#hambarger{
+    display: none;
+}
+
+/* navbar ends here........ */
+
+/* header section ends here............ */
+
+
+
+/* ======================Resposive For Mobile================================ */
+
+@media screen and (max-width:576px) {
+    .links-container{
+        display: none;
+    }
+    #hambarger{
+        display: block;
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
