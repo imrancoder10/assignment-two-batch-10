@@ -398,53 +398,67 @@ header {
 /* training section ends here............... */
 
 /* bmi section starts here................. */
-.bmi-content{
+.bmi-content {
     width: 50%;
     margin: 0 auto;
 }
-.bmi-background{
+
+.bmi-background {
     background-color: rgba(34, 34, 34, 1.00);
-   
+
 }
-.bmi-container{
+
+.bmi-container {
     padding: 50px 0px;
     display: flex;
     justify-content: space-between;
 }
-.bmi-table, .bmi-form{
+
+.bmi-table,
+.bmi-form {
     width: 50%;
 }
 
-.table-title{
+.table-title {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 50px;
     word-spacing: 5px;
 }
-table{
+
+table {
     width: 70%;
-    
+
 }
-table, tr, th, td{
+
+table,
+tr,
+th,
+td {
     border: 1px solid rgba(255, 255, 255, 0.50);
     border-collapse: collapse;
     padding: 15px;
-    
+
 }
-.table-head{
+
+.table-head {
     text-align: left;
     color: rgba(245, 235, 235, 0.9);
 }
 
-.form-title{
+.form-title {
     font-size: 1.5rem;
     font-weight: 500;
     word-spacing: 5px;
 }
-form{
+
+form {
     margin-top: 30px;
 }
-input, select, option{
+
+input,
+select,
+option {
     width: 48%;
     height: 50px;
     margin-bottom: 12px;
@@ -459,27 +473,29 @@ input, select, option{
     color: rgb(182, 177, 177);
 }
 
-::placeholder{
+::placeholder {
     font-size: 1rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.60);
     padding: 12px 0px;
     /* appearance: none; */
 }
-select{
+
+select {
     font-size: 1rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.60);
     padding: 12px 15px;
-    
+
 }
-option{
-    
-}
-#factor{
+
+option {}
+
+#factor {
     width: 98%;
 }
-.btn-form{
+
+.btn-form {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 16px 70px;
@@ -489,8 +505,35 @@ option{
     border: none;
     cursor: pointer;
 }
+
 /* bmi section ends here................. */
 
+/* team section starts here................ */
+
+.team-content {
+    width: 50%;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.team-img-container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 20px;
+    border-radius: 18px;
+
+}
+
+.team-img-container>div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+/* team section ends here................ */
 
 
 
@@ -670,69 +713,88 @@ option{
 
     /* Run section responsive ends here............. */
 
-/* training section starts here............... */
-.training-content {
-    width: 100%;
-    margin-bottom: 30px;
-}
+    /* training section starts here............... */
+    .training-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
-.training-img-container {
-    height: 250px;
-}
+    .training-img-container {
+        height: 250px;
+    }
 
-.training-img1 {
-    grid-column: 1/ span 6;
-}
+    .training-img1 {
+        grid-column: 1/ span 6;
+    }
 
-.training-img2 {
-    grid-column: 7/ -1;
-}
+    .training-img2 {
+        grid-column: 7/ -1;
+    }
 
-.training-img3 {
-    display: none;
-}
+    .training-img3 {
+        display: none;
+    }
 
-.training-img4 {
-    grid-column: 1/ span 6;
-}
+    .training-img4 {
+        grid-column: 1/ span 6;
+    }
 
-.training-img5 {
-    grid-column: 7/ -1;
-}
+    .training-img5 {
+        grid-column: 7/ -1;
+    }
 
-.training-img6 {
-    display: none;
-}
-
-
-/* training section ends here............... */
+    .training-img6 {
+        display: none;
+    }
 
 
-/* bmi section starts here................. */
-.bmi-content{
-    width: 85%;
-    margin: 0 auto;
-}
+    /* training section ends here............... */
 
-.bmi-container{
-    padding: 30px 0px;
-    flex-direction: column;
-    gap: 30px;
-}
-.bmi-table, .bmi-form{
-    width: 100%;
-}
 
-.table-title{
-    margin-bottom: 30px;
-}
-table{
-    width: 90%;
-}
-.btn-form{
-    margin-top: 20px;
-}
-/* bmi section ends here................. */
+    /* bmi section starts here................. */
+    .bmi-content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .bmi-container {
+        padding: 30px 0px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bmi-table,
+    .bmi-form {
+        width: 100%;
+    }
+
+    .table-title {
+        margin-bottom: 30px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .btn-form {
+        margin-top: 20px;
+    }
+
+    /* bmi section ends here................. */
+
+
+    /* team section starts here................ */
+
+    .team-content {
+        width: 100%;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* team section ends here................ */
+
 
 
 
