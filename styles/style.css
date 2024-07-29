@@ -427,7 +427,7 @@ header {
 }
 
 table {
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -517,24 +517,45 @@ option {}
 }
 
 .team-img-container {
-    height: 600px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 300px;
     grid-gap: 20px;
     background-color: rgba(255, 255, 255, 0.10);
     padding: 20px;
     border-radius: 18px;
 
 }
+.img-box{
+    position: relative;
+}
+.gradient{
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(45deg, rgba(0, 0, 0, 0.20),
+    rgba(0, 0, 0, 0.20));
+    position: absolute;
 
-.team-img-container>div img {
+}
+.team-img-container>div> img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    object-fit: cover;
+    display: block;
 }
 
-/* team section ends here................ */
 
+ .designation{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+ }
+ .designation h5{
+    font-size: 1.25rem;
+ }
+
+/* team section ends here................ */
 
 
 
@@ -753,7 +774,7 @@ option {}
 
     /* bmi section starts here................. */
     .bmi-content {
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -773,7 +794,11 @@ option {}
     }
 
     table {
-        width: 90%;
+        width: 100%;
+    }
+    .table-head {
+       font-weight: 400;
+       font-size: 0.8rem;
     }
 
     .btn-form {
@@ -791,6 +816,17 @@ option {}
 
     .team-img-container {
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 270px 270px 270px 270px;
+    }
+    .team-img-container>div img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .tean-img-hide{
+        display: none;
+    }
+    .designation>h5{
+        font-size: 0.8rem;
     }
 
     /* team section ends here................ */
