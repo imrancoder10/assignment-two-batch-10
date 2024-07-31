@@ -1019,6 +1019,12 @@ hr {
     /* team section ends here................ */
 
     /* workout section responsive starts here............ */
+    .my-workout{
+        width: 100%;
+    }
+    #exercise-title{
+        font-size: 1.5rem;
+    }
     .my-experience {
         flex-direction: column;
         gap: 20px;
@@ -1026,6 +1032,12 @@ hr {
 
     .left-container {
         width: 100%;
+    }
+    .left-title{
+        font-size: 1.4rem;
+    }
+    .hr-style{
+        margin-top: 10px;
     }
 
     /* workout section responsive ends here............ */
