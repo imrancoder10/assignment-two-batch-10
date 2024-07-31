@@ -33,7 +33,6 @@ body {
 
 /* header section starts here............ */
 header {
-    /* background-image: linear-gradient(180deg, rgba(17, 17, 17, 0)0%, rgba(119, 119, 119, 1.0) 100%); */
     background: linear-gradient(180deg, rgb(32, 32, 32), rgba(34, 33, 33, 0.7) 100%);
 }
 
@@ -94,6 +93,7 @@ header {
 /* navbar ends here........ */
 
 /* header section ends here............ */
+
 /* banner section starts here......... */
 .banner-container {
     display: flex;
@@ -561,6 +561,133 @@ option {}
 
 /* team section ends here................ */
 
+   
+/* workout section starts here..............  */
+.my-workout{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.my-experience {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-container {
+    width: 50%;
+    padding: 10px;
+}
+.left-subtitle{
+    font-size: 1.2rem;
+    color: red;
+    text-transform: uppercase;
+}
+.left-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.left-describtion{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.left-btn{
+    margin: 20px 0;
+}
+.left-img-container{
+    width: 100%;
+}
+.left-img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-position: right 0% top 1%; */
+    border-radius: 15px;
+}
+.hr-style{
+    border-color: rgba(212, 211, 211, 0.3);
+    width: 90%;
+}
+
+/* workout section ends here..............  */
+
+/* three set section starts here................ */
+.right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 0px;
+
+}
+
+.number {
+    width: 10%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(231, 229, 229, 0.884);
+}
+
+.content {
+    width: 65%;
+    position: relative;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+
+#done {
+    color: rgba(212, 211, 211, 0.925);
+}
+
+.reps{
+    color: #FFFFFF;
+}
+#join-now {
+    text-transform: uppercase;
+    color: red;
+    font-size: 0.8rem;
+}
+
+.my-img-box {
+    width: 25%;
+    /* height: 120px; */
+}
+
+.my-img-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* three set section ends here................ */
+
+
+
+
 
 /* footer section starts here.............. */
 footer {
@@ -891,6 +1018,59 @@ hr {
 
     /* team section ends here................ */
 
+    /* workout section responsive starts here............ */
+    .my-experience {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    /* workout section responsive ends here............ */
+
+
+    /* three set responsive section starts here................ */
+    .right-container {
+        width: 100%;
+    }
+
+
+    .box {
+        width: 100%;
+        height: 150px;
+        gap: 20px;
+
+    }
+
+     #join-now {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .reps {
+        font-size: 1rem;
+    }
+
+    .img-box>img {
+
+        object-fit: contain;
+    }
+
+    /* three set responsive section ends here................ */
+
 
     /* footer section starts here.............. */
 
@@ -909,7 +1089,8 @@ hr {
     .footer-list li {
         margin-bottom: 10px;
     }
-    .footer-title{
+
+    .footer-title {
         margin-bottom: 8px;
     }
 
