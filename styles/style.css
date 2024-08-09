@@ -471,6 +471,7 @@ option {
     padding: 0 20px;
     font-weight: 500;
     color: rgb(182, 177, 177);
+    border-right: 10px solid transparent;
 }
 
 ::placeholder {
@@ -561,14 +562,15 @@ option {}
 
 /* team section ends here................ */
 
-   
+
 /* workout section starts here..............  */
-.my-workout{
+.my-workout {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 50px;
     text-align: center;
 }
+
 .my-experience {
     display: flex;
     justify-content: space-between;
@@ -579,36 +581,43 @@ option {}
     width: 50%;
     padding: 10px;
 }
-.left-subtitle{
+
+.left-subtitle {
     font-size: 1.2rem;
     color: red;
     text-transform: uppercase;
 }
-.left-title{
+
+.left-title {
     font-size: 2rem;
     font-weight: 700;
     margin: 10px 0;
     text-transform: uppercase;
 }
-.left-describtion{
+
+.left-describtion {
     font-size: 1rem;
     font-weight: 500;
     padding-left: 25px;
 }
-.left-btn{
+
+.left-btn {
     margin: 20px 0;
 }
-.left-img-container{
+
+.left-img-container {
     width: 100%;
 }
-.left-img{
+
+.left-img {
     width: 100%;
     height: 100%;
     /* object-fit: cover; */
     /* object-position: right 0% top 1%; */
     border-radius: 15px;
 }
-.hr-style{
+
+.hr-style {
     border-color: rgba(212, 211, 211, 0.3);
     width: 90%;
 }
@@ -663,9 +672,10 @@ option {}
     color: rgba(212, 211, 211, 0.925);
 }
 
-.reps{
+.reps {
     color: #FFFFFF;
 }
+
 #join-now {
     text-transform: uppercase;
     color: red;
@@ -1019,12 +1029,14 @@ hr {
     /* team section ends here................ */
 
     /* workout section responsive starts here............ */
-    .my-workout{
+    .my-workout {
         width: 100%;
     }
-    #exercise-title{
+
+    #exercise-title {
         font-size: 1.5rem;
     }
+
     .my-experience {
         flex-direction: column;
         gap: 20px;
@@ -1033,10 +1045,12 @@ hr {
     .left-container {
         width: 100%;
     }
-    .left-title{
+
+    .left-title {
         font-size: 1.4rem;
     }
-    .hr-style{
+
+    .hr-style {
         margin-top: 10px;
     }
 
@@ -1056,7 +1070,7 @@ hr {
 
     }
 
-     #join-now {
+    #join-now {
         font-size: 0.8rem;
         margin-top: 5px;
     }
